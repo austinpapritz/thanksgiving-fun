@@ -5,6 +5,7 @@ const btn1 = document.getElementById('1');
 const btn2 = document.getElementById('2');
 const btn3 = document.getElementById('3');
 const clear = document.getElementById('clear');
+const plus = document.getElementById('plus');
 
 const body = document.querySelector('body');
 
@@ -38,12 +39,22 @@ clear.addEventListener('click', () => {
 
 // Functions
 function bgRed() {
-    if (arr === (1, 2, 3)) {
+    if (arr === [1, 2, 3]) {
         body.classList.add('red');
     } else {
         document.body.style.background = '';
     }
 }
+
+plus.addEventListener('click', () => {
+    arr.forEach(plusOne);
+});
+
+function plusOne(item, index, arr) {
+    arr[index] = item + 1;
+    console.log(arr, 'plusOne');
+}
+
 /* Display Functions */
 
 // (don't forget to call any display functions you want to run on page load!)
