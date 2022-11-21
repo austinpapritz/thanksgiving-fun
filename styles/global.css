@@ -35,5 +35,9 @@ main {
 }
 
 .red {
-    background: red;
+    background: coral;
+}
+
+.blue {
+    background: aqua;
 }

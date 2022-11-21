@@ -8,6 +8,7 @@ const clear = document.getElementById('clear');
 const plus = document.getElementById('plus');
 
 const body = document.querySelector('body');
+const header = document.querySelector('header');
 
 /* State */
 let arr = [];
@@ -16,25 +17,35 @@ let arr = [];
 
 btn1.addEventListener('click', () => {
     arr.push(1);
+    headerBlue();
     bgRed();
     console.log(arr);
 });
 
 btn2.addEventListener('click', () => {
     arr.push(2);
+    headerBlue();
     bgRed();
     console.log(arr);
 });
 
 btn3.addEventListener('click', () => {
     arr.push(3);
+    headerBlue();
     bgRed();
     console.log(arr);
 });
 
 clear.addEventListener('click', () => {
     arr = [];
+    headerBlue();
     bgRed();
+});
+
+plus.addEventListener('click', () => {
+    arr.forEach(plusOne);
+    headerBlue();
+    console.log(arr, 'plusOne');
 });
 
 // Functions
@@ -46,13 +57,11 @@ function bgRed() {
     }
 }
 
-plus.addEventListener('click', () => {
-    arr.forEach(plusOne);
-});
-
+function headerBlue() {
+    header.classList.toggle('blue');
+}
 function plusOne(item, index, arr) {
-    arr[index] = item + 1;
-    console.log(arr, 'plusOne');
+    arr[index] = 1 + item;
 }
 
 /* Display Functions */
