@@ -45,15 +45,20 @@ clear.addEventListener('click', () => {
 plus.addEventListener('click', () => {
     arr.forEach(plusOne);
     headerBlue();
+    bgRed();
     console.log(arr, 'plusOne');
 });
 
 // Functions
 function bgRed() {
-    if (arr === [1, 2, 3]) {
+    let arrZero = arr[0];
+    let arrOne = arr[1];
+    let arrTwo = arr[2];
+    console.log(arrZero, arrOne, arrTwo);
+    if (arr.length === 3 && (arrZero && arrOne && arrTwo) === (1 && 2 && 3)) {
         body.classList.add('red');
     } else {
-        document.body.style.background = '';
+        body.classList.remove('red');
     }
 }
 
