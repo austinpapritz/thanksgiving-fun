@@ -51,11 +51,11 @@ plus.addEventListener('click', () => {
 
 // Functions
 function bgRed() {
-    let arrZero = arr[0];
-    let arrOne = arr[1];
-    let arrTwo = arr[2];
+    let arrZero = arr[arr.length - 3];
+    let arrOne = arr[arr.length - 2];
+    let arrTwo = arr[arr.length - 1];
     console.log(arrZero, arrOne, arrTwo, 'arrseries');
-    if (arr.length === 3 && arrZero === 1 && arrOne === 2 && arrTwo === 3) {
+    if (arrZero === 1 && arrOne === 2 && arrTwo === 3) {
         body.classList.add('red');
     } else {
         body.classList.remove('red');
