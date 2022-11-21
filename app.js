@@ -54,8 +54,8 @@ function bgRed() {
     let arrZero = arr[0];
     let arrOne = arr[1];
     let arrTwo = arr[2];
-    console.log(arrZero, arrOne, arrTwo);
-    if (arr.length === 3 && (arrZero && arrOne && arrTwo) === (1 && 2 && 3)) {
+    console.log(arrZero, arrOne, arrTwo, 'arrseries');
+    if (arr.length === 3 && arrZero === 1 && arrOne === 2 && arrTwo === 3) {
         body.classList.add('red');
     } else {
         body.classList.remove('red');
