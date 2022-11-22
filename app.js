@@ -7,6 +7,8 @@ const btn3 = document.getElementById('3');
 const clear = document.getElementById('clear');
 const plus = document.getElementById('plus');
 
+const randomP = document.getElementById('random-num');
+
 const body = document.querySelector('body');
 const header = document.querySelector('header');
 
@@ -68,6 +70,14 @@ function headerBlue() {
 function plusOne(item, index, arr) {
     arr[index] = 1 + item;
 }
+
+function random(min, max) {
+    const num = Math.floor(Math.random() * (max - min + 1)) + min;
+    randomP.textContent = num;
+    return num;
+}
+
+random(1, 100);
 
 /* Display Functions */
 
