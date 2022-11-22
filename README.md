@@ -9,4 +9,7 @@ arr[arr.length - 1] to get last
 arr[arr.length - 2] to get 2nd last
 arr[arr.length - 3] to get 3rd last
 
-[]
+[x] create a loading page
+[x] user clicks to enter site
+
+[] create 3 buttons to play 3 drum sounds

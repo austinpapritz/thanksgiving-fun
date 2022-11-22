@@ -7,15 +7,24 @@ const btn3 = document.getElementById('3');
 const clear = document.getElementById('clear');
 const plus = document.getElementById('plus');
 
+const hihat = document.getElementById('hihat');
+const kick = document.getElementById('kick');
+const snare = document.getElementById('snare');
+
 const randomP = document.getElementById('random-num');
 
 const body = document.querySelector('body');
 const header = document.querySelector('header');
+const loader = document.querySelector('#loader');
 
 /* State */
 let arr = [];
 
 /* Events */
+
+// loader.addEventListener('click', () => {
+//     loader.classList.add('hide');
+// });
 
 btn1.addEventListener('click', () => {
     arr.push(1);
@@ -49,6 +58,18 @@ plus.addEventListener('click', () => {
     headerBlue();
     bgRed();
     console.log(arr, 'plusOne');
+});
+
+hihat.addEventListener('click', () => {
+    console.log('hihat');
+});
+
+kick.addEventListener('click', () => {
+    console.log('kick');
+});
+
+snare.addEventListener('click', () => {
+    console.log('snare');
 });
 
 // Functions
