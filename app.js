@@ -61,16 +61,35 @@ plus.addEventListener('click', () => {
 });
 
 hihat.addEventListener('click', () => {
+    new Audio('./assets/hihat.wav').play();
     console.log('hihat');
 });
 
 kick.addEventListener('click', () => {
+    new Audio('./assets/kick.wav').play();
     console.log('kick');
 });
 
 snare.addEventListener('click', () => {
+    new Audio('./assets/snare.wav').play();
     console.log('snare');
 });
+
+document.onkeydown = function (q) {
+    const key = q.key;
+    if (q.key === 'q') {
+        new Audio('./assets/hihat.wav').play();
+        console.log('hithat');
+    } else if (q.key === 'w') {
+        new Audio('./assets/kick.wav').play();
+        console.log('kick');
+    } else if (q.key === 'e') {
+        new Audio('./assets/snare.wav').play();
+        console.log('snare');
+    } else {
+        return;
+    }
+};
 
 // Functions
 function bgRed() {
