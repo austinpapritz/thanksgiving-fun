@@ -18,6 +18,8 @@ const header = document.querySelector('header');
 const loader = document.querySelector('#loader');
 
 const minForm = document.querySelector('#min-form');
+const minIn1 = document.querySelector('#input-1');
+const minIn2 = document.querySelector('#input-2');
 
 /* State */
 let arr = [];
@@ -30,6 +32,8 @@ let arr = [];
 
 minForm.addEventListener('submit', (e) => {
     e.preventDefault();
+    minIn1.value = '';
+    minIn2.value = '';
     console.log('form submit');
 });
 
