@@ -17,6 +17,8 @@ const body = document.querySelector('body');
 const header = document.querySelector('header');
 const loader = document.querySelector('#loader');
 
+const minForm = document.querySelector('#min-form');
+
 /* State */
 let arr = [];
 
@@ -25,6 +27,11 @@ let arr = [];
 // loader.addEventListener('click', () => {
 //     loader.classList.add('hide');
 // });
+
+minForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    console.log('form submit');
+});
 
 btn1.addEventListener('click', () => {
     arr.push(1);
@@ -87,6 +94,7 @@ document.onkeydown = function (play) {
 };
 
 // Functions
+
 function bgRed() {
     let arrZero = arr[arr.length - 3];
     let arrOne = arr[arr.length - 2];

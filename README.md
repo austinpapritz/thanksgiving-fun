@@ -16,3 +16,5 @@ arr[arr.length - 3] to get 3rd last
 [x] assign a diff key to each button
 
 [x] refactor onekeydown for ? notation
+
+[] Write a function min(a,b) which returns the least of two numbers a and b.
