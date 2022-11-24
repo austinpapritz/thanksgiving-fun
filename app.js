@@ -20,6 +20,7 @@ const loader = document.querySelector('#loader');
 const minForm = document.querySelector('#min-form');
 const minIn1 = document.querySelector('#input-1');
 const minIn2 = document.querySelector('#input-2');
+const lesserP = document.querySelector('#lesser-num');
 
 /* State */
 let arr = [];
@@ -32,9 +33,12 @@ let arr = [];
 
 minForm.addEventListener('submit', (e) => {
     e.preventDefault();
+    let num1 = minIn1.value;
+    let num2 = minIn2.value;
+    min(num1, num2);
+
     minIn1.value = '';
     minIn2.value = '';
-    console.log('form submit');
 });
 
 btn1.addEventListener('click', () => {
@@ -98,6 +102,12 @@ document.onkeydown = function (play) {
 };
 
 // Functions
+
+function min(num1, num2) {
+    num1 > num2
+        ? (lesserP.textContent = num2 + ' is less than ' + num1)
+        : (lesserP.textContent = num1 + ' is less than ' + num2);
+}
 
 function bgRed() {
     let arrZero = arr[arr.length - 3];
