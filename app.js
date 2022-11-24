@@ -75,17 +75,15 @@ snare.addEventListener('click', () => {
     console.log('snare');
 });
 
-document.onkeydown = function (q) {
-    const key = q.key;
-    if (q.key === 'q') {
-        new Audio('./assets/hihat.wav').play();
-    } else if (q.key === 'w') {
-        new Audio('./assets/kick.wav').play();
-    } else if (q.key === 'e') {
-        new Audio('./assets/snare.wav').play();
-    } else {
-        return;
-    }
+document.onkeydown = function (play) {
+    const key = play.key;
+    key === 'q'
+        ? new Audio('./assets/hihat.wav').play()
+        : key === 'w'
+        ? new Audio('./assets/kick.wav').play()
+        : key === 'e'
+        ? new Audio('./assets/snare.wav').play()
+        : key;
 };
 
 // Functions

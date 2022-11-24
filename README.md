@@ -14,3 +14,5 @@ arr[arr.length - 3] to get 3rd last
 
 [x] create 3 buttons to play 3 drum sounds
 [x] assign a diff key to each button
+
+[x] refactor onekeydown for ? notation
