@@ -37,7 +37,8 @@ let arr = [];
 
 evenoddForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    let evenoddNum = evenoddIn.value;
+    let num = evenoddIn.value;
+    evenoddP.textContent = evenOdd(num);
 });
 
 minForm.addEventListener('submit', (e) => {
