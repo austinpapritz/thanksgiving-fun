@@ -22,6 +22,10 @@ const minIn1 = document.querySelector('#input-1');
 const minIn2 = document.querySelector('#input-2');
 const lesserP = document.querySelector('#lesser-num');
 
+const evenoddForm = document.querySelector('#even-odd-form');
+const evenoddIn = document.querySelector('#evenodd-input');
+const evenoddP = document.querySelector('#evenodd-el');
+
 /* State */
 let arr = [];
 
@@ -30,6 +34,11 @@ let arr = [];
 // loader.addEventListener('click', () => {
 //     loader.classList.add('hide');
 // });
+
+evenoddForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    let evenoddNum = evenoddIn.value;
+});
 
 minForm.addEventListener('submit', (e) => {
     e.preventDefault();
