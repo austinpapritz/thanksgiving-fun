@@ -103,8 +103,16 @@ document.onkeydown = function (play) {
 
 // Functions
 
+evenOdd(4);
+evenOdd(5);
+
 function evenOdd(num) {
     let remainder = num % 2;
+    if (remainder === 0) {
+        return 'Even';
+    } else {
+        return 'Odd';
+    }
 }
 
 function min(num1, num2) {
