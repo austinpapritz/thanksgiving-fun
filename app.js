@@ -103,6 +103,10 @@ document.onkeydown = function (play) {
 
 // Functions
 
+function evenOdd(num) {
+    let remainder = num % 2;
+}
+
 function min(num1, num2) {
     num1 > num2
         ? (lesserP.textContent = num2 + ' is less than ' + num1)
