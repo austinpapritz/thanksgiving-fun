@@ -19,4 +19,4 @@ arr[arr.length - 3] to get 3rd last
 
 [x] Write a function min(a,b) which returns the least of two numbers a and b.
 
-[] Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
+[x] Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
