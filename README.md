@@ -17,4 +17,4 @@ arr[arr.length - 3] to get 3rd last
 
 [x] refactor onekeydown for ? notation
 
-[] Write a function min(a,b) which returns the least of two numbers a and b.
+[x] Write a function min(a,b) which returns the least of two numbers a and b.
